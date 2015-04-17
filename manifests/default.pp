@@ -16,5 +16,5 @@ package { 'ruby1.9.1-dev':
 
 exec { 'Install Jekyll':
     command => '/usr/bin/gem install jekyll',
-    require => Exec['Install RVM with Ruby']
+    require => Package['ruby1.9.1-dev']
 }
